@@ -10,23 +10,23 @@
 	printf("%d", &x); //esse & vai me retornar o endereço da memória //isso ainda não é um ponteiro
 	
 	//para criar um ponteiro, preciso informar pra que tipo de data ele vai apontar
-	int *ponteiro; //o '*nome' serve para dar nome ao ponteiro
-	ponteiro = &x; //agora ele está apontando para o endereço de memória da variável x
+	int *glauber; //o '*nome' serve para dar nome ao ponteiro
+	glauber = &x; //agora ele está apontando para o endereço de memória da variável x
 	
-	printf("%d\n", ponteiro); //devolve o endereço
-	printf("%d", *ponteiro); //devolve o valor naquele endereço
+	printf("%d\n", glauber); //devolve o endereço
+	printf("%d", *glauber); //devolve o valor naquele endereço
 	
 }*/
 
 void main(){
 	
 	int x = 10;
-	int *ponteiro = &x; //ponteiro criado e apontando para o endereço de x //muito melhor assim
+	int *filicius = &x; //ponteiro criado e apontando para o endereço de x //muito melhor assim
 	
 	int u = 25;
 	
-	*ponteiro = u; //ponteiro indicando que o endereço passa a valer u
+	*filicius = u; //ponteiro indicando que o valor no endereço de x passa a valer u
 	
-	printf("%d, %d", x, u);
+	printf("%d, %d, %d, %d", x, u, filicius, *filicius);
 	
 }

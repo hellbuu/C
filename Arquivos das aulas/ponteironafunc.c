@@ -10,7 +10,7 @@ void testePonteiro(int *pX);
 void main(){
 	
 	int teste = 5;
-	int *pTeste = &teste; //meu ponteiro aponta para o endereço de x
+	int *pTeste = &teste; //meu ponteiro aponta para o endereço de teste
 	
 	testePonteiro(pTeste); //chamo a função e passo pra ela o endereço da minha variável //ela vai no endereço da variável alterar o valor dela
 	
